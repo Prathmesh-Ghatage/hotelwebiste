@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul class="nav_links">
+            
+        <img class="logo" src="icon.jpg" alt="logo">
+           <li> <a href="#home">Home</a></li>
+           <li>  <a href="#ser">About</a></li>
+           <li> <a href="#about">Rooms</a></li>
+           <li> <a href="#event">Events</a></li>
+           
+           <li>  <a href="#Con">Contact</a></li>
+
+        </ul>
+    </nav>
+</header>
+ <div class="img"></div>
+<section id="home">
+     <h1 class="first">Hotel Singhara  </h1>
+     <h3 class="heading">"Experience exquisite luxury at Hotel Singhara: Where comfort meets elegance."</h3>
+     <button id="btn" >Book Room now</button>
+     
+    </section>
+ 
+<section id="ser">
+    <h1 class="fifth">About our Hotel</h1>
+
+    <div class="info">
+        Welcome to Singhara, a premier hotel nestled near the famous tourist attraction. Our hotel is the epitome of luxury and comfort, providing a remarkable experience for every guest.
+
+Located in the heart of this vibrant city, Singhara offers an unbeatable location that puts you just moments away from the iconic sights and sounds. Immerse yourself in the rich culture and history of the area, with easy access to explore the nearby attractions.
+    </div>
+   <div class="a1">
+        
+   </div>
+   <div class="info1">
+    At Singhara, our dedicated staff is committed to providing exceptional service that exceeds your expectations. From the warm welcome at the reception to the attentive assistance throughout your stay, our friendly team is here to ensure your comfort and satisfaction. We pride ourselves on our personalized approach, making your experience truly memorable
+</div>
+<div class="a2">
+    
+</div>
+<div class="info2">
+    Our well-appointed rooms are designed to be your sanctuary, offering a perfect blend of elegance and functionality. Each room is tastefully decorated and equipped with modern amenities, creating a cozy and relaxing atmosphere for you to unwind after a day of exploration.
+</div>
+<div class="a3">
+    
+</div>
+<div class="info3">
+    Indulge in a culinary journey at Singhara's renowned restaurant, where our skilled chefs showcase their expertise through a delectable menu. From local delicacies to international cuisine, our dining options cater to all tastes and preferences. Whether you're enjoying a leisurely breakfast, a business lunch, or a romantic dinner, our restaurant promises an exceptional gastronomic experience.
+</div>
+<div class="a4">
+    
+</div>
+</section>
+ <section id="about">
+
+    <h1 class="sec">
+        OUR ROOMS
+    </h1>
+   
+   <div class="i1"><div class="price">--For one night-- <br> $340 <br> <button class="b">Book now</button></div></div>
+   <div class="i2"><div class="price">--For one night-- <br>$60<br> <button class="b">Book now</button></div></div></div>
+   <div class="i3"><div class="price">--For one night-- <br>$200<br> <button class="b">Book now</button></div></div></div>
+   <div class="i4"><div class="price">--For one night--<br> $40<br> <button class="b">Book now</button></div></div></div>
+   
+ </section>
+
+<section id="event">
+    <h1 class="fourth">
+        Events
+    </h1>
+    <div class="e1">
+        <div class="w1">
+        
+    </div>
+    <p class="wed">
+        <h3 class="head">Cultural event</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </p>
+    
+</div>
+    <div class="e2"><div class="w2">
+        
+    </div>
+    <p class="party">
+        <h3 class="head">DJ & Parties</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </p>
+   
+</div>
+    
+</section>
+<section id="Con">
+<div class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+    <div id="map"></div>
+  </div>
+</section>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+<script>
+    function initMap() {
+  // Replace the latitude and longitude values with your desired location
+  var location = { lat: 40.712776, lng: -74.005974 };
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: location,
+    zoom: 15
+  });
+
+  var marker = new google.maps.Marker({
+    position: location,
+    map: map
+  });
+}
+</script>
+</body>
+</html>
